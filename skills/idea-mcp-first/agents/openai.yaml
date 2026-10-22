@@ -1,0 +1,3 @@
+interface:
+  display_name: "IDEA MCP 优先"
+  short_description: "优先使用 IDEA 索引进行导航、语义分析、诊断与调试"

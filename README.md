@@ -14,7 +14,9 @@ g-skills/
         ├── agents/
         │   └── openai.yaml
         └── references/
-            └── debugging.md
+            ├── workflows.md
+            ├── tool-selection.md
+            └── tool-profile.json
 ```
 
 - `skills/<skill-name>/SKILL.md`：技能入口，说明适用场景、工作流程和约束。
@@ -29,7 +31,9 @@ g-skills/
 
 | 技能 | 用途 | 依赖 |
 | --- | --- | --- |
-| [idea-mcp-first](skills/idea-mcp-first/SKILL.md) | 优先使用 IntelliJ IDEA MCP 完成项目导航、语义分析、诊断与调试 | 客户端已连接提供相应能力的 IDEA MCP 服务；工具不可用时按技能说明回退 |
+| [idea-mcp-first](skills/idea-mcp-first/SKILL.md) | 按任务使用 IDEA 索引与语义能力，限制读取范围、批量检查并按需重构和运行测试 | 已连接 IDEA MCP，具备原生终端、Git 和文件编辑工具；按当前接口适配或回退 |
+
+`idea-mcp-first` 提供 [工具筛选方案](skills/idea-mcp-first/references/tool-selection.md)及机器可读清单，保留 20 项工具，排除清单按当前注册结果核对。它不自动更改 MCP 注册、已安装技能或客户端配置；实际过滤需要所用环境支持，未测量时不承诺 token 收益。
 
 ## 安装与使用
 

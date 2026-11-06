@@ -1,0 +1,30 @@
+{
+  "retain": [
+    "search_symbol",
+    "get_symbol_info",
+    "analyze_calls",
+    "rename_refactoring",
+    "read_file",
+    "lint_files",
+    "search_file",
+    "search_text",
+    "search_regex",
+    "build_project",
+    "get_run_configurations",
+    "execute_run_configuration",
+    "optimize_imports",
+    "reformat_file",
+    "get_all_open_file_paths",
+    "list_directory_tree",
+    "get_project_modules",
+    "get_project_dependencies",
+    "get_repositories",
+    "get_changelists"
+  ],
+  "excludeFromDefault": [
+    "get_file_problems"
+  ],
+  "outOfScope": [
+    "execute_tool"
+  ]
+}
